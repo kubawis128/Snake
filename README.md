@@ -1,8 +1,12 @@
 # Snake
 Snake clone
 # Make
-Just use
+Just use:
+```
   make
+```  
 # Run
 Linux:
+```
   ./snake-game
+```
