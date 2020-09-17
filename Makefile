@@ -2,7 +2,7 @@
 default:all
 
 install-lib:
-	sudo apt-get install libsfml-dev g++
+	sudo apt-get install libsfml-dev g++ libsdl2-dev libsdl2
 cool-editor:
 	sudo apt-get install sublime-text
 	/opt/sublime_text/sublime_text
