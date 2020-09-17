@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include <SDL.h>
+#include <sdl/SDL.h>
 
 using namespace std;
 int b = 0;
