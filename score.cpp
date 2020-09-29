@@ -105,7 +105,7 @@ void Game::endscreen() {
     if (Game::alive) {
       //printf("Alive\n");
     }
-    system("./sfml-app --no-menu");
+    Game::Run();
   } else {
     SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
       "Good bye!",
