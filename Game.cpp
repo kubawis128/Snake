@@ -1,7 +1,7 @@
-#include "Game.h"
-#include "body.h"
-#include "food.h"
-#include "tile.h"
+#include "Game.hpp"
+#include "body.hpp"
+#include "food.hpp"
+#include "tile.hpp"
 #include <iostream>
  // Initialization of static variables
 #include <sstream>
