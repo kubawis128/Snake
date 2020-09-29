@@ -1,5 +1,7 @@
 #include "Game.h"
-
+#include "body.h"
+#include "food.h"
+#include "tile.h"
 #include <iostream>
  // Initialization of static variables
 #include <sstream>
@@ -134,9 +136,9 @@ void Game::run() {
   snake_direction = Direction::RIGHT;
   new_direction = Direction::RIGHT;
 
-  body.loadFromFile("body.png");
-  tile.loadFromFile("tile.png");
-  food.loadFromFile("food.png");
+  body.loadFromMemory(&body_png, body_png_len);
+  tile.loadFromMemory(&tile_png, tile_png_len);
+  food.loadFromMemory(&food_png, food_png_len);
 
   body_spr.setTexture(body);
   tile_spr.setTexture(tile);

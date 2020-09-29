@@ -5,7 +5,7 @@
 #include <sstream>
 
 #include <string.h>
-
+#include "Sansita.h"
 
 using namespace std;
 int a = 0;
@@ -14,7 +14,7 @@ int Game::menu(bool menu) {
 
   sf::RenderWindow window(sf::VideoMode(800, 600), "Snake Menu");
   sf::Font font;
-  font.loadFromFile("Sansita.ttf");
+  font.loadFromMemory(&Sansita_ttf, Sansita_ttf_len);
   sf::Event event;
   window.clear(sf::Color::Red);
   while (window.pollEvent(event)) {

@@ -1,10 +1,19 @@
-.PHONY = all install-lib run clean
-default:all
+CC=g++
+CFLAGS= -c -O3
+LDFLAGS= -o
+ExecName= snake-fit
+LIBS=-lsfml-graphics -lsfml-window -lsfml-system  `sdl2-config --cflags --libs`
+DEPS = Game.h body.h food.h tile.h Sansita.h
+OBJ = Game.o main.o score.o menu.o
+SRCS= main.cpp  menu.cpp  Game.cpp score.cpp 
+default:make
 
-install-libs:
-	sudo apt-get install libsfml-dev g++ libsdl2-dev
-all:
-	g++ -c  main.cpp   menu.cpp  Game.cpp score.cpp 
-	g++ main.o menu.o Game.o score.o  -o snake-game -lsfml-graphics -lsfml-window -lsfml-system  `sdl2-config --cflags --libs`
-run:
-	./snake-game 
+
+make:
+	$(CC) $< $(CFLAGS) $(SRCS)
+	$(CC) $^ $(LDFLAGS) $(ExecName) $(OBJ) $(LIBS)
+
+.PHONY: clean
+
+clean:
+	rm -r $(OBJ) $(ExecName)
