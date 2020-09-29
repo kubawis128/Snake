@@ -2,13 +2,13 @@
 default:all
 
 install-lib:
-	sudo apt-get install libsfml-dev g++ libsdl2-dev libsdl2
+	sudo apt-get install libsfml-dev g++ libsdl2-dev
 cool-editor:
-	sudo apt-get install sublime-text
+	snap install sublime-text --classic	
 	/opt/sublime_text/sublime_text
 all:
 	g++ -c  main.cpp   menu.cpp  Game.cpp score.cpp 
 	g++ main.o menu.o Game.o score.o  -o snake-game -lsfml-graphics -lsfml-window -lsfml-system  `sdl2-config --cflags --libs`
-	make run
+	run:
 run:
 	./snake-game 
