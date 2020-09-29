@@ -5,7 +5,7 @@
 #include <sstream>
 
 #include <string.h>
-#include "Sansita.h"
+#include "Sansita.hpp"
 
 using namespace std;
 int a = 0;
