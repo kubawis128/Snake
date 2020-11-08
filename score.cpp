@@ -105,7 +105,7 @@ void Game::endscreen() {
     if (Game::alive) {
       //printf("Alive\n");
     }
-    Game::Run();
+    Game::run();
   } else {
     SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_ERROR,
       "Good bye!",
