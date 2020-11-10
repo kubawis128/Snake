@@ -3,6 +3,8 @@
 #define __GAME_H__
 
 #include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics/Image.hpp>
 
 #include <random>
 
@@ -23,7 +25,7 @@ class Game {
 
   static void run();
 
-  private:
+  public:
 
     static sf::RenderWindow * window;
   static int level;
@@ -65,7 +67,8 @@ class Game {
   static sf::Sprite tile_spr;
   static sf::Sprite body_spr;
   static sf::Sprite food_spr;
-
+  static sf::Image iconnn;
+  static sf::Vector2u iconnnn;
 };
 
 #endif

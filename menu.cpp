@@ -6,14 +6,21 @@
 
 #include <string.h>
 #include "Sansita.hpp"
-
+#include "icon_menu.hpp"
 using namespace std;
 int a = 0;
 int Game::menu(bool menu) {
   //printf("menu.cpp run\n");
 
+
+
   sf::RenderWindow window(sf::VideoMode(800, 600), "Snake Menu");
   sf::Font font;
+    sf::Image iconnn;
+sf::Vector2u menuicon;
+iconnn.loadFromMemory(icon_menu_png, icon_menu_png_len);
+menuicon = iconnn.getSize();
+window.setIcon(menuicon.x,menuicon.y, iconnn.getPixelsPtr());
   font.loadFromMemory(&Sansita_ttf, Sansita_ttf_len);
   sf::Event event;
   window.clear(sf::Color::Red);
@@ -47,6 +54,7 @@ int Game::menu(bool menu) {
     window.draw(text);
     window.draw(text1);
     window.display();
+
     while (a = 1) {
       if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
         window.close();

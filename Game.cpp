@@ -1,6 +1,7 @@
 #include "Game.hpp"
 #include "body.hpp"
 #include "food.hpp"
+#include "icon.hpp"
 #include "tile.hpp"
 #include <iostream>
  // Initialization of static variables
@@ -37,6 +38,8 @@ std::pair < int, int > Game::foodLocation = Game::getNewFoodLocation();
 sf::Texture Game::body;
 sf::Texture Game::tile;
 sf::Texture Game::food;
+sf::Image Game::iconnn;
+sf::Vector2u Game::iconnnn;
 sf::Sprite Game::body_spr;
 sf::Sprite Game::tile_spr;
 sf::Sprite Game::food_spr;
@@ -124,7 +127,11 @@ void Game::moveSnake() {
 }
 
 void Game::run() {
+
   sf::RenderWindow(sf::VideoMode(640, 480), "Snake Game", sf::Style::Titlebar | sf::Style::Close);
+  iconnn.loadFromMemory(icon_png, icon_png_len); // File/Image/Pixel
+  iconnnn = iconnn.getSize();
+  window->setIcon(iconnnn.x,iconnnn.y, iconnn.getPixelsPtr());
   //printf("Game.cpp RUN\n");
 
   window->setFramerateLimit(60);
