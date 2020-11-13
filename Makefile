@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS= -c -O3
+CFLAGS= -c -Os
 LDFLAGS= -o
 ExecName= snake-fit
 LIBS=-lsfml-graphics -lsfml-window -lsfml-system  `sdl2-config --cflags --libs`
