@@ -12,6 +12,7 @@ default:make
 make:
 	$(CC) $< $(CFLAGS) $(SRCS)
 	$(CC) $^ $(LDFLAGS) $(ExecName) $(OBJ) $(LIBS)
+	strip $(ExecName)
 
 .PHONY: clean
 
