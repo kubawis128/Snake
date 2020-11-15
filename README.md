@@ -1,7 +1,7 @@
 # Snake:
 It just simple clone of popular game *Snake*
 
-![ScreenShot](https://github.com/kubawis128/Snake/screenshots/1.png)
+(https://github.com/kubawis128/Snake/blob/master/screenshots/1.png)
 # Requirements:
 ```SDL``` =< 2
 
