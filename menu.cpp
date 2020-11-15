@@ -5,7 +5,7 @@
 #include <sstream>
 
 #include <string.h>
-#include "Font.hpp"
+#include "font.hpp"
 #include "icon_menu.hpp"
 using namespace std;
 int a = 0;
