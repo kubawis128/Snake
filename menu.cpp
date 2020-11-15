@@ -73,4 +73,5 @@ window.setIcon(menuicon.x,menuicon.y, iconnn.getPixelsPtr());
     }
 
   }
+return(0);
 }
