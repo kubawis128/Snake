@@ -1,6 +1,6 @@
 # Snake:
 It just simple clone of popular game: *Snake*
-
+![Screen Shot](screenshots/1.png)
 # Requirements:
 ```SDL``` =< 2
 
