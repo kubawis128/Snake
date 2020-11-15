@@ -1,5 +1,5 @@
 # Snake:
-It just simple clone of popular game *Snake*
+It just simple clone of popular game *Snake* writed completly in c++ using SFML and SDL2
 
 ![](./screenshots/1.png)
 # Requirements:
@@ -22,7 +22,7 @@ sudo apt-get install g++ cmake make libsfml-dev libsdl-dev libsdl2-dev
 sudo pacman -S sfml sdl gcc cmake make
 ```
 # Building:
-Use CMake for this job:
+You can use CMake for this job:
 ```
   mkdir build
   cd build
