@@ -15,11 +15,11 @@ It just simple clone of popular game *Snake* writed completly in c++ using SFML 
 # Before Building:
 *Ubuntu*:
 ```
-sudo apt-get install g++ cmake make libsfml-dev libsdl-dev libsdl2-dev git
+sudo apt-get install g++ cmake make libsfml-dev libsdl2-dev git
 ```
 *Arch linux*:
 ```
-sudo pacman -S sfml sdl gcc cmake make git
+sudo pacman -S sfml sdl2 gcc cmake make git
 ```
 # Building:
 You need to download source code:
