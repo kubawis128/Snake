@@ -21,7 +21,7 @@ sf::Vector2u menuicon;
 iconnn.loadFromMemory(icon_menu_png, icon_menu_png_len);
 menuicon = iconnn.getSize();
 window.setIcon(menuicon.x,menuicon.y, iconnn.getPixelsPtr());
-  font.loadFromMemory(&Sansita_ttf, Sansita_ttf_len);
+  font.loadFromMemory(&font_ttf, font_ttf_len);
   sf::Event event;
   window.clear(sf::Color::Red);
   while (window.pollEvent(event)) {
