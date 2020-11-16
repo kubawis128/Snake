@@ -47,6 +47,7 @@ Repeat step: Before Building
 Double click ```Snake.exe```
 # Resources
 If you want to change resources(textures,fonts) you can use linux tool: *xxd*
+
 **Usage**:
 ```
 xxd -i [your_file] [Name_of_resource]
