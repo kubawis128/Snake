@@ -49,7 +49,7 @@ Double click ```Snake.exe```
 If you want to change resources(textures,fonts) you can use linux tool: *xxd*
 **Usage**:
 ```
-xxd -i [your_file] [Name of resource]
+xxd -i [your_file] [Name_of_resource]
 ```
 **Name of resources:**
 
