@@ -29,10 +29,10 @@ cd Snake
 ```
 You can use CMake for this job:
 ```
-  mkdir build
-  cd build
-  cmake ..
-  make
+mkdir build
+cd build
+cmake ..
+make
 ```
 If you get error it may mean that you have not meet requirements:
 
