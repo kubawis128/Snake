@@ -35,7 +35,8 @@ You can use CMake for this job:
   make
 ```
 If you get error it may mean that you have not meet requirements:
-Repeat step: Before Building
+
+Repeat step: **Before Building**
 
 # Run:
 *Linux*:
