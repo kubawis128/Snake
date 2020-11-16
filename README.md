@@ -45,3 +45,16 @@ Repeat step: Before Building
 *Windows*:
 
 Double click ```Snake.exe```
+# Resources
+If you want to change resources(textures,fonts) you can use linux tool: *xxd*
+**Usage**:
+```
+xxd -i [your_file] [Name of resource]
+```
+**Name of resources:**
+body.hpp -> Texture of snake body
+font.hpp -> Menu font
+icon_menu.hpp -> Menu icon
+icon.hpp -> Game icon
+tile.hpp -> Game tile(background)
+food.hpp -> Food (cherry)
